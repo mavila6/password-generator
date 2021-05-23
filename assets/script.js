@@ -23,7 +23,7 @@ var Specs =specials.split('');
 function generatePassword(){
 
 var characters = [];
-var pwd = '';
+var password = '';
 
 var pwlength = prompt('Insert a password length between 8 and 128 characters');
 
@@ -58,7 +58,17 @@ if (specialChar === true) {
     characters = characters.concat(Specs);
 }
 
+if (characters.length === 0) {
+    alert('Must choose at least one character type. Please refresh the page and try again.');
+}
+else{
+    for (let i = 0; i < pwlength; i++) {
+        var pwrandom = Math.floor(Math.random()*characters.length);
+        password = password + characters[pwrandom];
+    }
+}
 
+return password;
 
 }
 
