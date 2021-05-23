@@ -1,4 +1,10 @@
 // Assignment code here
+var uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+var lowercase = 'abcdefghijklmnopqrstuvwxyz';
+var numbers = '0123456789';
+var specials = '!@#$%^&*()_+=<>/?~';
+
+
 
 
 // Get references to the #generate element
@@ -10,7 +16,6 @@ function writePassword() {
     var passwordText = document.querySelector("#password");
 
     passwordText.value = password;
-
 }
 
 // Add event listener to generate button
