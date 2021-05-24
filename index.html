@@ -1,5 +1,7 @@
+<!-- Sets document type as html and english as language  -->
 <!DOCTYPE html>
 <html lang="en">
+    <!-- Meta elements determine type of characters and changes size of site when used on different devices; links stylesheet to html and sets a title -->
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,11 +9,14 @@
         <title>Password Generator</title>
         <link rel="stylesheet" href="./assets/style.css" />
     </head>
+    <!-- Contains content that is to be diplayed on the webpage -->
     <body>
         <div class="wrapper">
+            <!-- Adds a header to the page -->
         <header>
             <h1>Password Generator</h1>
         </header>
+        <!-- Creates the input and return section for password -->
         <div class="card">
             <div class="card-header">
             <h2>Generate a Password</h2>
@@ -24,11 +29,14 @@
                 aria-label="Generated Password"
             ></textarea>
             </div>
+            <!-- Adds the generate password button -->
             <div class="card-footer">
             <button id="generate" class="btn">Generate Password</button>
             </div>
         </div>
         </div>
+        <!-- Adds a link to the js file -->
         <script src="./assets/script.js"></script>
     </body>
+    <!-- Closes the html document content -->
 </html>
