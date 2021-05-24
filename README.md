@@ -16,7 +16,7 @@ Created a password generator to create a random password using a combination of 
 
 ## Screenshots
 
-![Password-generator] (assets/images/pwd-gen.png)
+![Password-generator] (./assets/images/pwd-gen.png)
 
 ## Credit
 
