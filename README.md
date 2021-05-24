@@ -14,7 +14,7 @@
 
 ## Screenshots
 
-![]
+![Password-generator] (assets/images/pwd-gen.png)
 
 ## Author 
 

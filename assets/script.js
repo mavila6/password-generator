@@ -14,13 +14,13 @@ function writePassword() {
 
     passwordText.value = password;
 }
-//creatwed generate password function
-function generatePassword(){
+//created generate password function
+function generatePassword() {
 //added array to be used later
 var characters = [];
 //empty password field to be used later
 var password = '';
-
+//provides a prompt for user to choose the password length
 var pwlength = prompt('Insert a password length between 8 and 128 characters');
 //assures password length must be between 8 and 128 integers
 if (pwlength < 8 || pwlength > 128) {
@@ -37,7 +37,7 @@ var upperChar = confirm('Would you like to include capital letters?');
 var lowerChar = confirm('Would you like to include lowercase letters?');
 var numChar = confirm('Would you like to include numbers');
 var specialChar = confirm('Would you like to include special characters?');
-//created if statements to add strings to the array
+//If user confirms the variables above these are the if statements to add strings to the array
 if (upperChar === true) {
     characters += uppercase;
 }
@@ -65,10 +65,10 @@ else{
         password = password + characters[pwrandom];
     }
 }
-//returns the generated password to the user
+//saves the generated password to console in dev tools
+console.log(password)
+//returns randomly generated password to the user 
 return password;
-
 }
-
 // Add event listener to generate button to listen to click 
 generateBtn.addEventListener("click", writePassword);
